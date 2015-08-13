@@ -45,3 +45,26 @@ do while coding can be done by using your keyboard.  This doesn't mean VIM
 doesn't support the mouse, because it does, it's often just faster to do it
 via the keyboard.  If your hands aren't leaving your keyboard every 5 seconds
 to move your mouse, you are going to be faster.
+
+The default mode VIM drops you in is called "command mode".  This is easily
+where most of the confusion comes from when learning VIM.  Instead of
+immediately being able type your code directly in the editor window, you are
+dropped into command mode, where almost every keystroke or combination of
+keystrokes equals a command.  Trying to type code in this mode will probably
+not do anything close to what you want.
+
+You may be thinking to yourself, why is command mode the default - it really
+doesn't make any sense, but if you think about it, how much time do you
+spend actually straight up writing out code vs time spent navigating and
+editing code that already exists?  Unless you're some sort of magical wizard,
+I'd bet that you spend more time doing the latter.
+
+Another benefit to the idea of a "command" mode where all keystrokes are
+possible commands is that most commands don't require crazy key combinations
+(like in emacs).  Often commands are just one or two letters, near the home
+row.  Nearly all the commands in command mode accept different kinds of
+"modifiers" that extend the command's functionality - for instance, many
+commands accept a number before the actual command, that signifies how many
+times to perform the command.  As an example, the command `dd` will remove the
+current line from the file.  If you type `5dd`, it will remove the current
+line, and the 4 lines after it.  Many commands can also be combined.

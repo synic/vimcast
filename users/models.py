@@ -1,11 +1,11 @@
 from django.db import models
 
-DEPARTMENTS = ( # {{{
+DEPARTMENTS = (
     ('sales',       'Sales'),
     ('executive',   'Executive'),
     ('developers',  'Developers'),
     ('support',     'Customer Support'),
-) # }}}
+)
 
 class Employee(models.Model):
     """
@@ -18,5 +18,13 @@ class Employee(models.Model):
         help_text="Department, leave null if you don't see the correct "
         "option here.", null=True, blank=True)
 
-    address = models.CharField("Address, Line 1", max_length=255)
+    address_one = models.CharField("Address, Line 1", max_length=255)
     address_two = models.CharField("Address, Line 2", max_length=255)
+
+
+    @property
+    def address(self):
+        address = self.address_one
+        if self.adddress_two: address += "\n{}".format(self.address_two)
+
+

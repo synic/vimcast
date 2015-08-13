@@ -16,11 +16,11 @@ The issue at this point is that, VIM is so different and foreign compared to
 other editors, that it's hard to get passed even the splash screen, and even
 then, the benefits to the editor aren't glaringly obvious.  In fact, the
 interface is so unintuitive that it seems very primitive and old.  You may
-wonder to yourself, WHY would I want to use some old ass command line editor
+wonder to yourself, *WHY* would I want to use some old ass command line editor
 that doesn't even have a proper gui, when I can just use pretty sublime or
 Eclipse or something.
 
-[SHOW SPLASH SCREEN WITH DEFAULT THEME AND NO PLUGINS]
+**[SHOW SPLASH SCREEN WITH DEFAULT THEME AND NO PLUGINS]**
 
 I completely admit, the default interface of VIM is pretty scary.  It turns a
 lot of people away, and that's without the fact that the learning curve can be
@@ -29,7 +29,7 @@ that you take for granted in other editors are, like tabs, or search and
 replace, or even an "open file" dialog.
 
 I can tell you at this juncture, there's no reason to get discouraged.  VIM
-DOES indeed support 99% of the features you want, either out of the box or
+*DOES* indeed support 99% of the features you want, either out of the box or
 with some configuring.
 
 But, that still doesn't answer why you'd want to use this old ass CLI editor
